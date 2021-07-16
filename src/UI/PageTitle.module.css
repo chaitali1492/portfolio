@@ -1,0 +1,11 @@
+.text{
+    font-family: 'poppins' , sans-serif;
+    font-size:14px;
+    color:#777777; 
+    text-align:center;
+    padding-top: 15px;
+}
+
+.titlecontainer{
+    padding-bottom: 20px;
+}

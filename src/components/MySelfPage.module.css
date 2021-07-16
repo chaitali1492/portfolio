@@ -1,0 +1,52 @@
+.MySelf{
+    padding-top: 120px;
+    /* background-color: #f9f9ff !important; */
+    height: auto;
+    width: 100%;
+}
+
+.text{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #777777;
+    margin-bottom: 15px;
+}
+
+.title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #222222;
+    padding-bottom: 40px;
+    font-weight: 600;
+}
+
+.profileName{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #222222;
+    font-weight: 600;
+}
+
+.profiledetails{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #777777;
+    padding-bottom: 10px;
+}
+
+.button{
+    color: #ffffff !important;
+    background-color: #8490ff !important;
+    border: 1px solid transparent !important;
+    margin-top: 20px !important;
+    padding: 10px 50px !important;
+    border-radius: 25px !important;
+    font-weight: 400 !important;
+    text-transform: uppercase !important;
+}
+
+.button:hover{
+    color: #000000 !important;
+    border: 1px solid #000000 !important;
+    background-color: #ffffff !important;
+}

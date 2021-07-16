@@ -1,0 +1,25 @@
+.title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #222222;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.session{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #222222;
+    text-align: center;
+
+}
+
+
+.result{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #222222;
+    text-align: center;
+    padding-bottom: 30px;
+}

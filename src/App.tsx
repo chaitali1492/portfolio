@@ -1,38 +1,42 @@
-import * as React from "react"
+import * as React from "react";
+
+
+import Header from './components/Header';
+import Cover from "./components/Cover";
+import Footer from './components/Footer';
+import FormPage from "./components/FormPage";
+import Features from "./components/Features";
+import QualificationPage from "./components/QualificationPage";
+import MySelfPage from "./components/MySelfPage";
+import ServicesPage from "./components/ServicesPage";
 import {
   ChakraProvider,
-  Box,
-  Text,
-  Link,
-  VStack,
-  Code,
-  Grid,
-  theme,
+  extendTheme,
 } from "@chakra-ui/react"
 import { ColorModeSwitcher } from "./ColorModeSwitcher"
-import { Logo } from "./Logo"
+import { createBreakpoints } from "@chakra-ui/theme-tools"
+
+const breakpoints = createBreakpoints({
+  sm: "320px",
+  md: "768px",
+  lg: "960px",
+  xl: "1200px",
+})
+
+const theme = extendTheme({ breakpoints })
+
+
 
 export const App = () => (
   <ChakraProvider theme={theme}>
-    <Box textAlign="center" fontSize="xl">
-      <Grid minH="100vh" p={3}>
-        <ColorModeSwitcher justifySelf="flex-end" />
-        <VStack spacing={8}>
-          <Logo h="40vmin" pointerEvents="none" />
-          <Text>
-            Edit <Code fontSize="xl">src/App.tsx</Code> and save to reload.
-          </Text>
-          <Link
-            color="teal.500"
-            href="https://chakra-ui.com"
-            fontSize="2xl"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn Chakra
-          </Link>
-        </VStack>
-      </Grid>
-    </Box>
+  
+    <Header />
+    <Cover />
+    <ServicesPage />
+    <MySelfPage />
+    <QualificationPage />
+    <Features />
+    <FormPage />
+    <Footer />
   </ChakraProvider>
 )

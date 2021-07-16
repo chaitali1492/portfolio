@@ -1,0 +1,12 @@
+.name{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #777777;
+    margin-bottom: 10px;
+    font-weight: 400;
+    text-align: right;
+}
+
+.progress{
+    color: #8490ff;
+}
