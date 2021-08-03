@@ -13,7 +13,9 @@ import classes from "./Cover.module.css";
 import { createBreakpoints } from "@chakra-ui/theme-tools";
 import Bounce from 'react-reveal/Bounce';
 
-import dummyimg from "../images/profilepicture.png";
+// import dummyimg from "../images/profilepicture.png";
+
+import dummyimg from '../../../images/profilepicture.png';
 
 const breakpoints  = createBreakpoints({
   sm: "30em",

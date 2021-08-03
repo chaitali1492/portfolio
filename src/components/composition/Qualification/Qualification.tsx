@@ -1,15 +1,15 @@
 import React from "react";
-import classes from "./QualificationPage.module.css";
-import PageTitle from "../UI/PageTitle";
-import JobDetails from "../UI/JobDetails";
-import Education from "../UI/Education";
+import classes from "./Qualification.module.css";
+// import PageTitle from "../UI/PageTitle";
+// import JobDetails from "../UI/JobDetails";
+import {Education, JobDetails, PageTitle} from "../../ui";
 import {  Container } from "@chakra-ui/react";
 import { Divider } from "@chakra-ui/react";
 import { SimpleGrid, Box } from "@chakra-ui/react"
 import Bounce from 'react-reveal/Bounce';
 
 
-const QualificationPage = () => {
+const Qualification = () => {
   return (
     <Bounce left>
     <Container centerContent maxW="container.xl">
@@ -94,4 +94,4 @@ const QualificationPage = () => {
   );
 };
 
-export default QualificationPage;
+export default Qualification;

@@ -3,12 +3,12 @@ import { FormControl, Container } from "@chakra-ui/react";
 import { Input, Button } from "@chakra-ui/react";
 import { Textarea } from "@chakra-ui/react";
 import { SimpleGrid } from "@chakra-ui/react";
-import classes from "./FormPage.module.css";
-import PageTitle from '../UI/PageTitle';
+import classes from "./Form.module.css";
+import {PageTitle} from '../../ui';
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import Bounce from 'react-reveal/Bounce';
 
-const FormPage = () => {
+const Form = () => {
   return (
     <Bounce left>
     <Container centerContent maxW="container.xl">
@@ -51,4 +51,4 @@ const FormPage = () => {
   );
 };
 
-export default FormPage;
+export default Form;

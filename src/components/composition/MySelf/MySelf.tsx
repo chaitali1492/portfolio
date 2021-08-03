@@ -1,12 +1,13 @@
 import React from "react";
-import classes from "./MySelfPage.module.css";
+import classes from "./MySelf.module.css";
 import { Container, SimpleGrid, Box, Text } from "@chakra-ui/react";
 import { Image, Button } from "@chakra-ui/react";
-import PageTitle from "../UI/PageTitle";
-import ProgressBar from "../UI/ProgressBar";
+import { PageTitle, ProgressBar } from "../../ui"; 
+// import ProgressBar from "../UI/ProgressBar";
 import { PhoneIcon } from "@chakra-ui/icons";
 import { EmailIcon } from "@chakra-ui/icons";
-import profilepicture from "../images/profilepicture.png";
+// import profilepicture from "../images/profilepicture.png";
+import profilepicture from '../../../images/profilepicture.png'
 import Bounce from 'react-reveal/Bounce';
 
 

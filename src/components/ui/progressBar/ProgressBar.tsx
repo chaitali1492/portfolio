@@ -1,17 +1,19 @@
 import React from "react";
 import classes from "./ProgressBar.module.css";
 import { Progress, Text, Box } from "@chakra-ui/react";
+import { Props } from "./type";
 
-const ProgressBar = (props: any) => {
+const ProgressBar: React.FC<Props> = ({name, value}) => {
   return (
     <Box paddingTop="15px">
-      <Text className={classes.name}> {props.name} </Text>
+      <Text className={classes.name}> {name} </Text>
       <Progress
-        isAnimated="true"
+        isAnimated={true}
+        // hasStripe="true"
         borderRadius="1rem"
         className={classes.progress}
         size="sm"
-        value={props.value}
+        value={value}
       />
     </Box>
   );

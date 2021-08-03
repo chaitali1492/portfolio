@@ -1,5 +1,7 @@
 export interface PrimitiveType{
-    
+    title:string;
+    session:string;
+    result : string;
 }
 
 export interface ComplexType{

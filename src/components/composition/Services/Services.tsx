@@ -1,8 +1,7 @@
 import React from "react";
-import classes from "./ServicesPage.module.css";
+import classes from "./Services.module.css";
 import { Container, SimpleGrid, Box } from "@chakra-ui/react";
-import PageTitle from "../UI/PageTitle";
-import ServicesDetails from "../UI/ServicesDetails";
+import {PageTitle, ServicesDetails} from '../../ui'
 import { FcMultipleDevices } from "react-icons/fc";
 import { FcIphone } from "react-icons/fc";
 import { FcBiohazard } from "react-icons/fc";
@@ -10,7 +9,7 @@ import { FcTemplate } from "react-icons/fc";
 import Bounce from 'react-reveal/Bounce';
 
 
-const ServicesPage = () => {
+const Services = () => {
   return (
     <Bounce left>
     <Container centerContent maxW="container.xl">
@@ -39,7 +38,7 @@ const ServicesPage = () => {
               <ServicesDetails
                 title="Mobile Design"
                 servicedesc="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio iusto rem corporis ad voluptatem cumque libero. Reprehenderit inventore perspiciatis est optio repellendus quaerat ab!"
-                icon={<FcIphone size="3x" />}
+                icon={(<FcIphone size="3x" />)}
               />
               <ServicesDetails
                 title="Interaction Design"
@@ -55,4 +54,4 @@ const ServicesPage = () => {
   );
 };
 
-export default ServicesPage;
+export default Services;

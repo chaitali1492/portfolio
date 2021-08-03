@@ -1,10 +1,10 @@
 import React from "react";
 import Bounce from 'react-reveal/Bounce';
-import classes from "./Features.module.css";
+import classes from "./Feature.module.css";
 import { Container, Text } from "@chakra-ui/react";
 import { Grid, GridItem, Box } from "@chakra-ui/react";
 import { Link } from "@chakra-ui/react";
-import PageTitle from "../UI/PageTitle";
+import { PageTitle } from "../../ui"; 
 import { BsPerson } from "react-icons/bs";
 import { FaRocket } from "react-icons/fa";
 import { GrDiamond } from "react-icons/gr";
@@ -13,7 +13,7 @@ import { PhoneIcon } from '@chakra-ui/icons';
 import { ChatIcon } from '@chakra-ui/icons';
 
 
-const Features = () => {
+const Feature = () => {
   return (
     <Bounce right>
     <Container centerContent maxW="container.xl">
@@ -82,4 +82,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default Feature;

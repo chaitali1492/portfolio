@@ -1,14 +1,14 @@
 import * as React from "react";
 
 
-import Header from './components/Header';
-import Cover from "./components/Cover";
-import Footer from './components/Footer';
-import FormPage from "./components/FormPage";
-import Features from "./components/Features";
-import QualificationPage from "./components/QualificationPage";
-import MySelfPage from "./components/MySelfPage";
-import ServicesPage from "./components/ServicesPage";
+import Header from './components/composition/Header';
+import Cover from "./components/composition/Cover";
+import Footer from './components/composition/Footer';
+import Form from "./components/composition/Form";
+import Feature from "./components/composition/Feature";
+import Qualification from "./components/composition/Qualification";
+import MySelf from "./components/composition/MySelf";
+import Services from "./components/composition/Services";
 import {
   ChakraProvider,
   extendTheme,
@@ -32,11 +32,11 @@ export const App = () => (
   
     <Header />
     <Cover />
-    <ServicesPage />
-    <MySelfPage />
-    <QualificationPage />
-    <Features />
-    <FormPage />
+    <Services />
+    <MySelf />
+    <Qualification />
+    <Feature />
+    <Form />
     <Footer />
   </ChakraProvider>
 )

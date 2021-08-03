@@ -1,15 +1,15 @@
 import React from "react";
 import { Heading, Text } from "@chakra-ui/react";
-
+import Props from './type';
 import classes from "./PageTitle.module.css";
 
-const PageTitle = (props: any) => {
+const PageTitle:React.FC<Props> = ({title, subtitle}) => {
   return (
     <div className={classes.titlecontainer}>
       <Heading as="h2" size="xl" color="#222222" textAlign="center" fontFamily="'poppins' , sans-serif">
-        {props.title}
+        {title}
       </Heading>
-      <Text className={classes.text}>{props.subtitle}</Text>
+      <Text className={classes.text}>{subtitle}</Text>
     </div>
   );
 };
