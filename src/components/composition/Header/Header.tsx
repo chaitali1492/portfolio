@@ -29,7 +29,7 @@ const HeaderItems = [
     href: "#",
   },
   {
-    name: "PROJECTS",
+    name: "FEATURES",
     href: "#",
   },
   {
