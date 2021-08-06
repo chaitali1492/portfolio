@@ -5,7 +5,7 @@ import Header from './components/composition/Header';
 import Cover from "./components/composition/Cover";
 import Footer from './components/composition/Footer';
 import Form from "./components/composition/Form";
-import Feature from "./components/composition/Feature";
+import Features from "./components/composition/Features";
 import Qualification from "./components/composition/Qualification";
 import MySelf from "./components/composition/MySelf";
 import Services from "./components/composition/Services";
@@ -15,6 +15,8 @@ import {
 } from "@chakra-ui/react"
 import { ColorModeSwitcher } from "./ColorModeSwitcher"
 import { createBreakpoints } from "@chakra-ui/theme-tools"
+
+import { HeaderData } from "./mock";
 
 const breakpoints = createBreakpoints({
   sm: "320px",
@@ -30,12 +32,12 @@ const theme = extendTheme({ breakpoints })
 export const App = () => (
   <ChakraProvider theme={theme}>
   
-    <Header />
+    <Header {...HeaderData} />
     <Cover />
     <Services />
     <MySelf />
     <Qualification />
-    <Feature />
+    <Features />
     <Form />
     <Footer />
   </ChakraProvider>

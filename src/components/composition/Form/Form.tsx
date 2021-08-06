@@ -11,7 +11,7 @@ import Bounce from 'react-reveal/Bounce';
 const Form = () => {
   return (
     <Bounce left>
-    <Container centerContent maxW="container.xl">
+    <Container centerContent maxW="container.xl" id="form">
 
     <div className={classes.formPage}>
         <div>

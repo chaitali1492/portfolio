@@ -14,7 +14,7 @@ import Bounce from 'react-reveal/Bounce';
 const MySelfPage = () => {
   return (
     <Bounce right>
-    <Container centerContent maxW="container.xl">
+    <Container centerContent maxW="container.xl" id="myself">
       <div className={classes.MySelf}>
         <div>
           <PageTitle

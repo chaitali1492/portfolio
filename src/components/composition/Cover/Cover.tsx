@@ -29,7 +29,7 @@ const Cover = () => {
   return (
     <Bounce top>
     <div className={classes.cover}>
-      <Container centerContent maxW="container.xl" height="100%">
+      <Container centerContent maxW="container.xl" height="100%" id="cover">
         <SimpleGrid columns={{sm:1,md:2}} spacing="40px" height="100%">
             <Box justifyContent="center" alignItems="center"  flexFlow="column" display="flex" >
               <Image

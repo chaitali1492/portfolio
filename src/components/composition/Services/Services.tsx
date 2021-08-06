@@ -12,7 +12,7 @@ import Bounce from 'react-reveal/Bounce';
 const Services = () => {
   return (
     <Bounce left>
-    <Container centerContent maxW="container.xl">
+    <Container centerContent maxW="container.xl" id="services">
       <div className={classes.servicepage}>
         <Box paddingBottom="20px">
           <PageTitle
