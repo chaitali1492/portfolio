@@ -26,7 +26,7 @@ const Data:FeaturesProps = {
         title:'Highly recomended',
         subtitle:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit natus cumque itaque incidunt, laboriosam deleniti!"
     },{
-        icon:"ChatIcon",
+        icon:"MdRateReview",
         title:'Positive Reviews',
         subtitle:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit natus cumque itaque incidunt, laboriosam deleniti!"
     }]

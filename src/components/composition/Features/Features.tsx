@@ -7,10 +7,21 @@ import { Feature, PageTitle } from "../../ui";
 import { BsPerson } from "react-icons/bs";
 import { FaRocket } from "react-icons/fa";
 import { GrDiamond } from "react-icons/gr";
+import { MdRateReview } from "react-icons/md";
 import { CalendarIcon } from '@chakra-ui/icons';
 import { PhoneIcon } from '@chakra-ui/icons';
 import '@chakra-ui/icons';
 import Props from "./type";
+
+const Icons:{[key:string]:React.ReactElement} = {
+  'BsPerson':<BsPerson className={classes.svg} />,
+  'FaRocket': <FaRocket className={classes.svg} />,
+  'GrDiamond':<GrDiamond className={classes.svg} />,
+  'CalendarIcon':<CalendarIcon className={classes.svg} />,
+  'PhoneIcon':<PhoneIcon className={classes.svg} />,
+  'MdRateReview' : <MdRateReview className={classes.svg} />
+}
+
 
 
 const Features:React.FC<Props> = ({pageTitle, features}) => {
@@ -27,7 +38,7 @@ const Features:React.FC<Props> = ({pageTitle, features}) => {
               return (
                 <GridItem key={title}>
                   <Feature
-                  icon={<BsPerson className = {classes.svg} />}
+                  icon={Icons[icon]}
                   title={title} 
                   subtitle={subtitle}/>
                 </GridItem>

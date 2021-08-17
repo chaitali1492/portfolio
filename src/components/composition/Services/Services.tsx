@@ -38,30 +38,7 @@ const Services:React.FC<Props> = ({pageTitle, services}) => {
               />
               )
             })}
-            {/* <Box>
-              <ServicesDetails
-                title="Web Development"
-                desc="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio iusto rem corporis ad voluptatem cumque libero. Reprehenderit inventore perspiciatis est optio repellendus quaerat ab!"
-                icon={<FcMultipleDevices size="3x" />}
-              />
-              <ServicesDetails
-                title="Printing"
-                desc="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio iusto rem corporis ad voluptatem cumque libero. Reprehenderit inventore perspiciatis est optio repellendus quaerat ab!"
-                icon={<FcBiohazard size="3x" />}
-              />
-            </Box>
-            <Box>
-              <ServicesDetails
-                title="Mobile Development"
-                desc="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio iusto rem corporis ad voluptatem cumque libero. Reprehenderit inventore perspiciatis est optio repellendus quaerat ab!"
-                icon={(<FcIphone size="3x" />)}
-              />
-              <ServicesDetails
-                title="Interaction UI Designing"
-                desc="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio iusto rem corporis ad voluptatem cumque libero. Reprehenderit inventore perspiciatis est optio repellendus quaerat ab!"
-                icon={<FcTemplate size="3x" />}
-              />
-            </Box> */}
+            
           </SimpleGrid>
         </div>
       </div>
