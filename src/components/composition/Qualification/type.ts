@@ -1,10 +1,12 @@
+import { EducationProps, JobDetailsProps, PageTitleProps } from "../../ui/";
+
 export interface PrimitiveType{
-    title:string;
-    subtitle?:string;
 }
 
 export interface ComplexType{
-    
+    pageTitle: PageTitleProps
+    jobDetails: JobDetailsProps[]
+    educations: EducationProps[]
 }
 
 export interface EventType{

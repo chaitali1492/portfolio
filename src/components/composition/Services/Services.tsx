@@ -7,45 +7,61 @@ import { FcIphone } from "react-icons/fc";
 import { FcBiohazard } from "react-icons/fc";
 import { FcTemplate } from "react-icons/fc";
 import Bounce from 'react-reveal/Bounce';
+import Props from "./type";
 
+const Icons:{[key:string]:React.ReactElement} = {
+  'FcMultipleDevices':<FcMultipleDevices size="3x" />,
+  'FcBiohazard': <FcBiohazard size="3x"/>,
+  'FcIphone':<FcIphone size="3x"/>,
+  'FcTemplate':<FcTemplate size="3x"/>,
+}
 
-const Services = () => {
+const Services:React.FC<Props> = ({pageTitle, services}) => {
   return (
     <Bounce left>
     <Container centerContent maxW="container.xl" id="services">
       <div className={classes.servicepage}>
         <Box paddingBottom="20px">
           <PageTitle
-            title="Have a Look at my Services"
-            subtitle="who are in extremely love with eco friendly system"
+            {...pageTitle}
           />
         </Box>
         <div>
           <SimpleGrid columns={{sm:1,md:2}} spacing="40px">
-            <Box>
+            {services.map(({title, desc, icon})=>{
+              return (
+                <ServicesDetails
+                title={title}
+                key={title}
+                desc={desc}
+                icon={Icons[icon]}
+              />
+              )
+            })}
+            {/* <Box>
               <ServicesDetails
-                title="Web Design"
-                servicedesc="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio iusto rem corporis ad voluptatem cumque libero. Reprehenderit inventore perspiciatis est optio repellendus quaerat ab!"
+                title="Web Development"
+                desc="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio iusto rem corporis ad voluptatem cumque libero. Reprehenderit inventore perspiciatis est optio repellendus quaerat ab!"
                 icon={<FcMultipleDevices size="3x" />}
               />
               <ServicesDetails
-                title="Print Design"
-                servicedesc="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio iusto rem corporis ad voluptatem cumque libero. Reprehenderit inventore perspiciatis est optio repellendus quaerat ab!"
+                title="Printing"
+                desc="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio iusto rem corporis ad voluptatem cumque libero. Reprehenderit inventore perspiciatis est optio repellendus quaerat ab!"
                 icon={<FcBiohazard size="3x" />}
               />
             </Box>
             <Box>
               <ServicesDetails
-                title="Mobile Design"
-                servicedesc="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio iusto rem corporis ad voluptatem cumque libero. Reprehenderit inventore perspiciatis est optio repellendus quaerat ab!"
+                title="Mobile Development"
+                desc="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio iusto rem corporis ad voluptatem cumque libero. Reprehenderit inventore perspiciatis est optio repellendus quaerat ab!"
                 icon={(<FcIphone size="3x" />)}
               />
               <ServicesDetails
-                title="Interaction Design"
-                servicedesc="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio iusto rem corporis ad voluptatem cumque libero. Reprehenderit inventore perspiciatis est optio repellendus quaerat ab!"
+                title="Interaction UI Designing"
+                desc="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio iusto rem corporis ad voluptatem cumque libero. Reprehenderit inventore perspiciatis est optio repellendus quaerat ab!"
                 icon={<FcTemplate size="3x" />}
               />
-            </Box>
+            </Box> */}
           </SimpleGrid>
         </div>
       </div>

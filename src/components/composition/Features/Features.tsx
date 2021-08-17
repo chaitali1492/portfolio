@@ -9,58 +9,30 @@ import { FaRocket } from "react-icons/fa";
 import { GrDiamond } from "react-icons/gr";
 import { CalendarIcon } from '@chakra-ui/icons';
 import { PhoneIcon } from '@chakra-ui/icons';
-import { ChatIcon } from '@chakra-ui/icons';
+import '@chakra-ui/icons';
+import Props from "./type";
 
 
-const Features = () => {
+const Features:React.FC<Props> = ({pageTitle, features}) => {
   return (
     <Bounce right>
     <Container centerContent maxW="container.xl" id="feature">
       <div className={classes.featuresPage}>
         <div>
-          <PageTitle
-            title="Some Features that Made us Unique"
-            subtitle="Who are in extremely love with eco friendly system"
-          />
+          <PageTitle {...pageTitle}/>
         </div>
         <div>
           <Grid templateColumns={{sm:"repeat(1, 1fr)",md:"repeat(2, 1fr)",lg:"repeat(3, 1fr)"}} gap={6}>
-            <GridItem >
-              <Feature
-               icon={<BsPerson className = {classes.svg} />}
-               title={"Expert Technicians"} 
-               subtitle={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit natus cumque itaque incidunt, laboriosam deleniti!"}/>
-            </GridItem>
-            <GridItem>
-                <Feature
-                icon={<CalendarIcon className={classes.svg} />}
-                title={"Professional Service"}
-                subtitle={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit natus cumque itaque incidunt, laboriosam deleniti!"} />
-            </GridItem>
-            <GridItem>
-                <Feature
-                icon={<PhoneIcon className={classes.svg} />}
-                title={"Great Support"}
-                subtitle={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit natus cumque itaque incidunt, laboriosam deleniti!"} />
-            </GridItem>
-            <GridItem>
-                <Feature
-                icon={<FaRocket className={classes.svg} />}
-                title={"Technical Skills"}
-                subtitle={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit natus cumque itaque incidunt, laboriosam deleniti!"} />
-            </GridItem>
-            <GridItem>
-                <Feature
-                icon={<GrDiamond className={classes.svg} />}
-                title={"Highly recomended"}
-                subtitle={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit natus cumque itaque incidunt, laboriosam deleniti!"} />
-            </GridItem>
-            <GridItem>
-                <Feature
-                icon={<ChatIcon className={classes.svg} />}
-                title={"Positive Reviews"}
-                subtitle={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit natus cumque itaque incidunt, laboriosam deleniti!"} />
-            </GridItem>
+            {features.map(({title, icon, subtitle})=>{
+              return (
+                <GridItem key={title}>
+                  <Feature
+                  icon={<BsPerson className = {classes.svg} />}
+                  title={title} 
+                  subtitle={subtitle}/>
+                </GridItem>
+              )
+            })}
           </Grid>
         </div>
       </div>

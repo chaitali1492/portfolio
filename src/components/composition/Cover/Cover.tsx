@@ -16,6 +16,7 @@ import Bounce from 'react-reveal/Bounce';
 // import dummyimg from "../images/profilepicture.png";
 
 import dummyimg from '../../../images/profilepicture.png';
+import Props from "./type";
 
 const breakpoints  = createBreakpoints({
   sm: "30em",
@@ -25,7 +26,7 @@ const breakpoints  = createBreakpoints({
   "2xl" : "96em"
 })
 
-const Cover = () => {
+const Cover:React.FC<Props> = ({name, designation, description}) => {
   return (
     <Bounce top>
     <div className={classes.cover}>
@@ -43,7 +44,7 @@ const Cover = () => {
             </Box>
             <Box display="flex" justifyContent="center" flexFlow="column" textAlign={["center","left"]}>
               <Heading color="white" className={classes.heading} >
-                Hi, I'm <br /> <span>John Andrew</span> <br /> Art Director
+                Hi, I'm <br /> <span>John Andrew</span> <br /> Full Stack Developer
               </Heading>
               <Text className={classes.text}>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -53,7 +54,7 @@ const Cover = () => {
               </Text>
 
               <Box>
-                <Button className={classes.submitbtn}> Let us talk </Button>
+                <Button className={classes.submitbtn}> Let us chat </Button>
               </Box>
             </Box>
           </SimpleGrid>

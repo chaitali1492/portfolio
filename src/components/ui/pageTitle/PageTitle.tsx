@@ -9,7 +9,7 @@ const PageTitle:React.FC<Props> = ({title, subtitle}) => {
       <Heading as="h2" size="xl" color="#222222" width="100%" textAlign="center" fontFamily="'poppins' , sans-serif">
         {title}
       </Heading>
-      <Text className={classes.text}>{subtitle}</Text>
+      {(subtitle && subtitle.length>0) && <Text className={classes.text}>{subtitle}</Text> }
     </div>
   );
 };

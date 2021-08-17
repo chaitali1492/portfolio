@@ -1,1 +1,6 @@
 export {default as HeaderData} from './header/data'
+export {default as CoverData} from './cover/data'
+export {default as ServicesData} from './services/data'
+export {default as MySelfData} from './myself/data'
+export {default as QualificationData} from './qualification/data'
+export {default as FeaturesData} from './features/data'

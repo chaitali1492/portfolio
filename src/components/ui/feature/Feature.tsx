@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./Feature.module.css";
-import { GridItem, Box, Link, Text } from "@chakra-ui/react";
+import { Box, Link, Text } from "@chakra-ui/react";
 import Props from './type';
 
 

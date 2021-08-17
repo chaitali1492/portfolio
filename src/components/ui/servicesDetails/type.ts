@@ -2,7 +2,7 @@ import React from "react";
 
 export interface PrimitiveType{
     title:string;
-    servicedesc: string;
+    desc: string;
     icon: React.ReactElement;
 }
 

@@ -1,10 +1,12 @@
+
+
 export interface PrimitiveType{
-    title:string;
-    subtitle?:string;
+    name: string,
+    designation: string
+    description:string
 }
 
 export interface ComplexType{
-    
 }
 
 export interface EventType{
