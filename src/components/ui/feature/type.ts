@@ -1,7 +1,7 @@
 import React from "react";
 
 export interface PrimitiveType{
-    icon: React.ReactElement;
+    icon: React.ReactElement | null;
     title:string;
     subtitle:string;
 }
