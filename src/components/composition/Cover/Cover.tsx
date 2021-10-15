@@ -30,8 +30,8 @@ const Cover:React.FC<Props> = ({name, designation, description}) => {
   return (
     <Bounce top>
     <div className={classes.cover}>
-      <Container centerContent maxW="container.xl" height="100%" id="cover">
-        <SimpleGrid columns={{sm:1,md:2}} spacing="40px" height="100%">
+      <Container centerContent maxW="container.xl" height="100vh" id="cover" >
+        <SimpleGrid columns={{sm:1,md:2}} spacing="40px" height="100%" marginTop={{sm:100, md:0}}>
             <Box justifyContent="center" alignItems="center"  flexFlow="column" display="flex" >
               <Image
                 src={dummyimg}
